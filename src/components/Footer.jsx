@@ -7,7 +7,7 @@ export default function Footer() {
   const twitterLink = 'https://twitter.com/your-twitter-username'; // Replace with your Twitter link
 
   return (
-    <div style={{ backgroundColor: '#333', color: 'white', padding: '20px 0', textAlign: 'center' }}>
+    <div style={{ marginTop: '20px',backgroundColor: '#333', color: 'white', padding: '20px 0', textAlign: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '10px' }}>
         <h3 style={{ margin: '0 0 -5px' }}>Tushar Bhagwan Madane</h3>
         <p style={{ marginBottom: '-5px' }}>Ghole road, Shivajinagar, Pune, 411005</p>
@@ -27,8 +27,8 @@ export default function Footer() {
         </a>
       </div>
 
-      <div style={{ marginTop: '20px' }}>
-        <p>&copy; {new Date().getFullYear()} Tushar Bhagwan Madane. All Rights Reserved.</p>
+      <div style={{ marginTop: '20px'}}>
+        <p>&copy; {new Date().getFullYear()} Tushar Madane. All Rights Reserved.</p>
       </div>
     </div>
   );

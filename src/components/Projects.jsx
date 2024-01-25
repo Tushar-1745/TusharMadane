@@ -72,6 +72,18 @@ function Projects() {
           </div>
           <div style={{ textAlign: 'center', fontSize:'20px' }} ><a href="https://github.com/Tushar-1745/Employee-Management-System" target='_blank'>watch out project</a></div>
         </div>
+        <div className="box" style={boxStyle}>
+          <h2 style={{ textAlign: 'center', fontSize: '30px' }}>News App</h2>
+          <p style={{ marginLeft: '15px' }}>Developed Live News Application using ReactJs and Remote API</p>
+          <div >
+            <h3 style={{ textAlign: 'center' }}>Technologies Used: </h3>
+            <ul style={{ marginLeft: '150px' }}>
+              <li>ReactJs</li>
+              <li>API</li>
+            </ul>
+          </div>
+          <div style={{ textAlign: 'center', fontSize:'20px' }} ><a href="https://github.com/Tushar-1745/https://github.com/Tushar-1745/newsapp" target='_blank'>watch out project</a></div>
+        </div>
       </div>
     </div>
   )

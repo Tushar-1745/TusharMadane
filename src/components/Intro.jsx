@@ -10,7 +10,9 @@ const tmPicStyle = {
   marginLeft: '-60px',
   height: '450px',
   width: '250px',
+  zIndex: 1, 
   mixBlendMode: 'color-burn'
+
 };
 
 const handleButtonClick = () => {

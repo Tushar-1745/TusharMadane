@@ -1,3 +1,21 @@
+/* App.css */
+
+/* App.css */
+/* App.css */
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw8iQl5ATa6YHEwMrgCAadC2Caz5Q23KnVyw&usqp=CAU') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.content-wrapper {
+  overflow-y: auto; /* Enable vertical scrolling for the content */
+  height: calc(100vh - 40px); /* Adjust the height based on your layout */
+}
+
 .App {
   text-align: center;
 }

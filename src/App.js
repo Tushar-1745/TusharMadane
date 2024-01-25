@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Education from './pages/Education';
 import Achievements from './pages/Achievements';
 import Certifications from './pages/Certifications';
-
+import ProjectCarousel from './components/projects/ProjectCarousel';
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Intro/>
-      <Projects/>
+      <ProjectCarousel/>
       <Education/>
       <Footer/>
     </div>
