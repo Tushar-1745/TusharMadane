@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 import Education from './pages/Education';
 import Achievements from './pages/Achievements';
-import Certifications from './pages/Certifications';
+import Certifications from './components/Certifications';
 import ProjectCarousel from './components/projects/ProjectCarousel';
 
 
@@ -17,8 +17,8 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/education' element={<Education/>}></Route>
-          <Route path='/achievements' element={<Achievements/>}>About</Route>
-          <Route path='/certifications' element={<Certifications/>}>Contact</Route>
+          <Route path='/achievements' element={<Achievements/>}></Route>
+          <Route path='/certifications' element={<Certifications/>}></Route>
         </Routes>
       </BrowserRouter>
       <Intro/>
