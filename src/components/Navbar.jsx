@@ -14,7 +14,11 @@ const navbarStyle = {
   alignItems: 'center',  // Center items vertically
   fontSize: '20px'
 }
-
+const homeImageStyle = {
+  width: '50px',  // Adjust the width as needed
+  height: '50px', // Adjust the height as needed
+  margin: 'auto 25px'
+};
 const linkContainerStyle = {
   display: 'flex',
   flexDirection: 'row',
@@ -22,6 +26,7 @@ const linkContainerStyle = {
 
 const boxStyle = {
   margin: 'auto 20px',
+  textDecoration: 'none',  // Remove underline
 }
 
 const logoStyle={
@@ -37,6 +42,11 @@ function Navbar() {
     <>
       <div style={navbarStyle}>
         <div style={linkContainerStyle}>
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgwo34i6dF8u55chEwhiibz6jMGUS1UbdRsc_hTBHLEQvEJM5qCY7qeYD4WroO9cHzB5w&usqp=CAU"
+            alt="Home"
+            style={homeImageStyle}
+          />
           <Link to="/" style={boxStyle}>Home</Link>
           <Link to="/education" style={boxStyle}>Education</Link>
           <Link to="/certifications" style={boxStyle}>Certifications</Link>
@@ -58,5 +68,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
 

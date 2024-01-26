@@ -29,7 +29,7 @@ const Certifications = () => {
 
   const certificationImageStyle = {
     width: '100%',
-    height: 'auto',
+    height: '180px',
     borderRadius: '10px',
   };
 
