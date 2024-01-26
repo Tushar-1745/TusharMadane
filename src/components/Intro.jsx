@@ -10,7 +10,7 @@ const introContainerStyle = {
   flexDirection: 'row',
   alignItems: 'flex-start', // Align items at the start of the cross-axis (vertically)
   justifyContent: 'center', // Center horizontally
-  height: '100vh', // Set height to full viewport height
+  height: '80vh', // Set height to full viewport height
 };
 
 const introContentStyle = {
