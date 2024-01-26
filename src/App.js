@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar/>
+        <Navbar style={{position: 'fixed'}}/>
         <Routes>
           <Route path='/education' element={<Education/>}></Route>
           <Route path='/achievements' element={<Achievements/>}></Route>
