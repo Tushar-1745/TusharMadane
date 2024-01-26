@@ -44,7 +44,7 @@ const Certifications = () => {
 
   return (
     <div>
-      <h1 style={{ fontStyle: 'italic', color: '#61C0BF', fontSize: '36px', fontWeight: 'bold', textDecoration: 'underline' }}>Certifications</h1>
+      <h1 style={{ fontSize: '60px', fontStyle: 'italic', textAlign: 'center' }}>Certifications</h1>
       <div style={certificationsContainerStyle}>
 
 

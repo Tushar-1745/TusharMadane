@@ -3,9 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import Footer from './components/Footer';
-
 import Education from './pages/Education';
-import Achievements from './pages/Achievements';
 import Certifications from './components/Certifications';
 import ProjectCarousel from './components/projects/ProjectCarousel';
 
@@ -13,20 +11,18 @@ import ProjectCarousel from './components/projects/ProjectCarousel';
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Navbar style={{position: 'fixed'}}/>
         <Routes>
-          <Route path='/' element={<Intro/>}></Route>
           <Route path='/education' element={<Education/>}></Route>
-          <Route path='/achievements' element={<Achievements/>}></Route>
           <Route path='/certifications' element={<Certifications/>}></Route>
         </Routes>
-      </BrowserRouter> */}
-      <Intro/>
-      <ProjectCarousel/>
-      <Education/>
-      <Certifications/>
-      <Footer/>
+      </BrowserRouter>
+      <div><Intro/></div>
+      <div style={{marginTop: '-100px'}}><ProjectCarousel/></div>
+      <div style={{marginTop: '100px'}}><Education/></div>
+      <div style={{marginTop: '100px'}}><Certifications/></div>
+      <div><Footer/></div>
     </div>
   );
 }

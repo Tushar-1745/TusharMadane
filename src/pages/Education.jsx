@@ -4,7 +4,7 @@ import React from 'react';
 const Education = () => {
   return (
     <div>
-      <h1 style={{ textAlign: 'center', textDecoration: 'underline' }}>Education</h1>
+      <h1 style={{ fontSize: '60px', fontStyle: 'italic', textAlign: 'center' }}>Education</h1>
 
       <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-evenly' }}>
         <div style={{ border: '4px solid black', height: '300px', width: '400px', alignItems: 'center', backgroundColor: 'rgb(182, 245, 245)' }}>

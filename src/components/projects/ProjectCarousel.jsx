@@ -37,6 +37,8 @@ const ProjectCarousel = () => {
         <AliceCarousel
           items={items}
           responsive={responsive}
+          disableButtonsControls  // Disable navigation arrows
+          disableDotsControls      // Disable navigation dots
           currentIndex={currentIndex}
           ref={carouselRef}
         />

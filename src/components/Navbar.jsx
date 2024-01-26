@@ -46,7 +46,6 @@ function Navbar() {
         <div style={navbarStyle}>
             <Link to="/" style={boxStyle}>Home</Link>
             <Link to="/education" style={boxStyle}>Education</Link>
-            <Link to="/achievements" style={boxStyle}>Achievments</Link>
             <Link to="/certifications" style={boxStyle}>Certifications</Link>
             {/* <div id="box" style={boxStyle}>Achievements</div>
             <div id="box" style={boxStyle}>Certifications</div> */}
