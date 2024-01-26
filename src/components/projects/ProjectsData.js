@@ -29,11 +29,18 @@ const projects = [
     },
     {
       id: 5,
-      title: 'News App (Duplicate)',
-      description: 'Developed Live News Application using ReactJs and Remote API',
-      technologies: ['ReactJs', 'API'],
-      githubLink: 'https://github.com/Tushar-1745/https://github.com/Tushar-1745/newsapp',
+      title: 'WordCounter',
+      description: 'ReactJs based word functions application',
+      technologies: ['ReactJs', 'BootStrap'],
+      githubLink: 'https://github.com/Tushar-1745/wordapp'
     },
+    {
+      id: 6,
+      title: 'Chat Application',
+      description: 'Java based realtime chat application',
+      technologies: ['java, swing, awt'],
+      githubLink: 'https://github.com/Tushar-1745/chat-application'
+    }
   ];
   
   export default projects;
