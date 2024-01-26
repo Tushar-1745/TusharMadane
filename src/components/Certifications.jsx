@@ -1,40 +1,90 @@
 import React from 'react';
-import dsa from '../pictures/dsa.jpeg';
-import webdevelopment from '../pictures/webdevelopment.jpeg';
+import dsaImage from '../pictures/dsa.jpeg';
+import webDevelopmentImage from '../pictures/webdevelopment.jpeg';
 
 const Certifications = () => {
+  const certificationsContainerStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    marginBottom: '40px',  // Adjust margin as needed
+  };
+
+  const certificationStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    padding: '20px',
+    margin: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+    backgroundColor: '#283747',  // Change background color
+    color: '#F8F9FA',  // Change text color
+    textAlign: 'center',
+    width: '400px',  // Adjust width as needed
+    transition: 'transform 0.3s ease-in-out',  // Hover effect transition
+  };
+
+  const certificationImageStyle = {
+    width: '100%',
+    height: 'auto',
+    borderRadius: '10px',
+  };
+
+  // Hover effect functions
+  const handleHover = (e) => {
+    e.target.style.transform = 'scale(1.05)';
+  };
+
+  const handleHoverOut = (e) => {
+    e.target.style.transform = 'scale(1)';
+  };
+
   return (
     <div>
-      <div style={{ background: '#0A1424', padding: '20px', color: '#61C0BF', textAlign: 'center', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)' }}>
-        <h1 style={{ margin: 0, fontSize: '36px', fontWeight: 'bold', textDecoration: 'underline' }}>Certifications</h1>
-      </div>
+      <h1 style={{ fontStyle: 'italic', color: '#61C0BF', fontSize: '36px', fontWeight: 'bold', textDecoration: 'underline' }}>Certifications</h1>
+      <div style={certificationsContainerStyle}>
 
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px 70px', border: '2px solid black', borderRadius: '10px', height: '500px', width: '90%', backgroundColor: 'aquamarine' }} id="box2">
-        <h1 style={{ margin: '0' }}>Data Structure and Algorithms using Java</h1>
-        <h3 style={{ margin: '0' }}>by NPTEL</h3>
-        <img style={{ margin: 'auto', height: '250px', width: '550px' }} src={dsa} alt="nothing" />
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} className="skills-container">
-          <h1 style={{ margin: '0' }}>Key Skills</h1>
-          <ul style={{ marginTop: '-20px', fontSize: '22px', padding: 0, textAlign: 'left' }}>
-            <li style={{ marginBottom: '10px' }}>Java Language</li>
-            <li style={{ marginBottom: '10px' }}>Data Structures</li>
-            <li style={{ marginBottom: '10px' }}>Algorithms</li>
-          </ul>
+
+        {/* Certification 1 */}
+        <div
+          style={certificationStyle}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHoverOut}
+        >
+          <h2>Data Structure and Algorithms using Java</h2>
+          <h4 style={{marginTop: '-5px'}}>by NPTEL</h4>
+          <img src={dsaImage} alt="DSA" style={certificationImageStyle} />
+          <div style={{ marginTop: '20px' }}>
+            <h2>Key Skills</h2>
+            <ul style={{ paddingLeft:'70px', marginTop:'-15px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+              <li>Java Language</li>
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+            </ul>
+
+          </div>
         </div>
-      </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px 70px', border: '2px solid black', borderRadius: '10px', height: '500px', width: '90%', backgroundColor: 'aquamarine' }} id="box1">
-        <h1 style={{ margin: '0' }}>Web Development</h1>
-        <h3 style={{ margin: '0' }}>by Udemy</h3>
-        <img style={{ margin: 'auto', height: '250px', width: '550px' }} src={webdevelopment} alt="" />
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} className="skills-container">
-          <h1 style={{ margin: '0' }}>Key Skills</h1>
-          <ul style={{ marginTop: '-20px', fontSize: '22px', padding: 0, textAlign: 'left' }}>
-            <li style={{ marginBottom: '10px' }}>HTML</li>
-            <li style={{ marginBottom: '10px' }}>CSS</li>
-            <li style={{ marginBottom: '10px' }}>JavaScript</li>
-            <li style={{ marginBottom: '10px' }}>Rest API</li>
-          </ul>
+        {/* Certification 2 */}
+        <div
+          style={certificationStyle}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHoverOut}
+        >
+          <h2>Web Development</h2>
+          <h4 style={{marginTop: '-5px'}}>by Udemy</h4>
+          <img src={webDevelopmentImage} alt="Web Development" style={certificationImageStyle} />
+          <div style={{ marginTop: '20px' }}>
+          <h2>Key Skills</h2>
+            <ul style={{ paddingLeft:'70px', marginTop:'-15px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -42,3 +92,4 @@ const Certifications = () => {
 };
 
 export default Certifications;
+

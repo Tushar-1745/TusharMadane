@@ -1,0 +1,47 @@
+.certifications-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    display-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .certification-card {
+    background-color: #61C0BF;
+    padding: 20px;
+    color: #0A1424;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 45%;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certification-card img {
+    margin: 20px auto;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .skills-container {
+    margin-top: auto;
+  }
+  
+  .skills-container h2 {
+    margin: 0;
+  }
+  
+  .skills-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .skills-container li {
+    margin-bottom: 10px;
+  }
+  

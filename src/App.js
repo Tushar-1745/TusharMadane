@@ -13,17 +13,19 @@ import ProjectCarousel from './components/projects/ProjectCarousel';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar style={{position: 'fixed'}}/>
         <Routes>
+          <Route path='/' element={<Intro/>}></Route>
           <Route path='/education' element={<Education/>}></Route>
           <Route path='/achievements' element={<Achievements/>}></Route>
           <Route path='/certifications' element={<Certifications/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       <Intro/>
       <ProjectCarousel/>
       <Education/>
+      <Certifications/>
       <Footer/>
     </div>
   );
