@@ -32,7 +32,7 @@ const ProjectCarousel = () => {
 
   return (
     <div>
-      <h1 style={{ fontSize: '60px', fontStyle: 'italic', textAlign: 'center' }}>My Projects</h1>
+      <h1 style={{ fontSize: '60px', fontStyle: 'italic', textAlign: 'center' }}>Projects</h1>
       <div style={{ position: 'relative', paddingLeft: '90px' }}>
         <AliceCarousel
           items={items}

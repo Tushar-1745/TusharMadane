@@ -2,9 +2,9 @@ import React from 'react';
 import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 export default function Footer() {
-  const instagramLink = 'https://www.instagram.com/your-instagram-username'; // Replace with your Instagram link
-  const facebookLink = 'https://www.facebook.com/your-facebook-username'; // Replace with your Facebook link
-  const twitterLink = 'https://twitter.com/your-twitter-username'; // Replace with your Twitter link
+  const instagramLink = 'https://www.instagram.com/your-instagram-username';
+  const facebookLink = 'https://www.facebook.com/your-facebook-username'; 
+  const twitterLink = 'https://twitter.com/your-twitter-username'; 
 
   return (
     <div style={{ marginTop: '20px',backgroundColor: '#333', color: 'white', padding: '20px 0', textAlign: 'center' }}>

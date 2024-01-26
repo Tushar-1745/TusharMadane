@@ -13,7 +13,6 @@ const navbarStyle={
 
 const boxStyle={
   margin: 'auto 20px',
-  // marginTop:
 }
 const img0Style={
   height: '50px',
@@ -38,8 +37,6 @@ const img2Style={
   mixBlendMode: 'color-born'
 }
 
-
-
 function Navbar() {
   return (
     <>
@@ -47,8 +44,6 @@ function Navbar() {
             <Link to="/" style={boxStyle}>Home</Link>
             <Link to="/education" style={boxStyle}>Education</Link>
             <Link to="/certifications" style={boxStyle}>Certifications</Link>
-            {/* <div id="box" style={boxStyle}>Achievements</div>
-            <div id="box" style={boxStyle}>Certifications</div> */}
             <a href="https://leetcode.com/Tushar1745/" target="_blank" rel="noopener noreferrer">
                 <img style={ img0Style} src='https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png' alt=''/>
             </a>
@@ -64,3 +59,5 @@ function Navbar() {
 }
 
 export default Navbar
+
+
