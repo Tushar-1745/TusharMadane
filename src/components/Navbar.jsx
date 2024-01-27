@@ -36,7 +36,7 @@ const logoStyle = {
 }
 
 const buttonStyle = {
-  fontSize: '23px', border: 'none', outline: 'none', color: 'black', padding: '7px 16px',
+  fontSize: '21px', border: 'none', outline: 'none', color: 'black', padding: '10px 16px',
   backgroundColor: 'inherit', fontFamily: 'inherit', margin: 0, cursor: 'pointer',
 }
 
@@ -44,11 +44,11 @@ const divStyle = {
   position: 'relative', display: 'inline-block'
 }
 const LinkStyle = {
-  color: 'black', padding: '12px 16px', textDecoration: 'none', display: 'block', textAlign: 'left',
+  color: 'white', padding: '6px 16px', textDecoration: 'none', display: 'block', textAlign: 'left',
 }
 const dropdownStyle = {
   // position: 'absolute', backgroundColor: '#f9f9f9', minWidth: '50px',
-  position: 'absolute', backgroundColor: 'blue', minWidth: '50px',
+  position: 'absolute', backgroundColor: '#0A1434', minWidth: '50px',
   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)', zIndex: 1,
 }
 
@@ -78,6 +78,7 @@ function Navbar() {
             <button style={buttonStyle}>Experience </button>
             {isExperienceDropdownOpen && (
               <div style={dropdownStyle} >
+                <Link to="/experience/projects" style={LinkStyle}>Projects</Link>
                 <Link to="/experience/internship" style={LinkStyle}> Internship</Link>
                 <Link to="/experience/job" style={LinkStyle}>Job</Link>
               </div>
