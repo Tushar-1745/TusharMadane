@@ -29,25 +29,69 @@ import './App.css';
 
 // export default App;
 
+// import React from 'react';
+// import { BrowserRouter, Routes, Route, useRoutes } from 'react-router-dom';
+// import Navbar from './components/Navbar';
+// import Intro from './components/Intro';
+// import Footer from './components/Footer';
+// import Education from './pages/Education';
+// import Certifications from './components/Certifications';
+// import ProjectCarousel from './components/projects/ProjectCarousel';
+
+// const AppContent = () => {
+//   const route = useRoutes([
+//     { path: '/', element: <div><Intro/><ProjectCarousel/><Education/><Certifications/></div> },
+//     { path: '/education', element: <Education /> },
+//     { path: '/certifications', element: <Certifications /> },
+//   ]);
+
+//   return (
+//     <div>
+//       <Navbar style={{ position: 'fixed' }} />
+//       {route}
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/*" element={<AppContent />} />
+//         </Routes>
+//       </BrowserRouter>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React from 'react';
-import { BrowserRouter, Routes, Route, useRoutes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useRoutes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Intro from './components/Intro';
 import Footer from './components/Footer';
-import Education from './pages/Education';
+import Intro from './components/Intro';
+import ProjectCarousel from './components/ProjectCarousel';
+import Education from './components/Education';
 import Certifications from './components/Certifications';
-import ProjectCarousel from './components/projects/ProjectCarousel';
+import Job from './components/job';
+import Internship from './components/internship';
 
 const AppContent = () => {
+  const location = useLocation();
   const route = useRoutes([
     { path: '/', element: <div><Intro/><ProjectCarousel/><Education/><Certifications/></div> },
     { path: '/education', element: <Education /> },
     { path: '/certifications', element: <Certifications /> },
+    { path: '/experience/internship', element: <Internship /> },
+    { path: '/experience/Job', element: <Job /> },
   ]);
 
   return (
     <div>
-      <Navbar style={{ position: 'fixed' }} />
+      <Navbar style={{ position: 'fixed' }} currentRoute={location.pathname} />
       {route}
       <Footer />
     </div>
@@ -67,4 +111,5 @@ function App() {
 }
 
 export default App;
+
 
