@@ -159,7 +159,7 @@ const Education = () => {
             <p style={{ ...pStyle, marginLeft: '-1px' }}><strong>Name: </strong>Sinhgad Institute of Technology and Science</p>
             <p style={pStyle}><strong>Address: </strong>Narhegaon, Ambegaon, Pune</p>
             <p style={pStyle}><strong>Course:</strong> Computer Science and Engineering</p>
-            <p style={pStyle}><strong>CGPA: </strong>73.23</p>
+            <p style={pStyle}><strong>CGPA: </strong>8.25</p>
             <p style={pStyle}><strong>Course Duration: </strong>2020-2024</p>
           </div>
         </div>

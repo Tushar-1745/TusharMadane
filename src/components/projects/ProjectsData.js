@@ -38,7 +38,7 @@ const projects = [
       id: 6,
       title: 'Chat Application',
       description: 'Java based realtime chat application',
-      technologies: ['java, swing, awt'],
+      technologies: ['java', 'swing', 'awt'],
       githubLink: 'https://github.com/Tushar-1745/chat-application'
     }
   ];
