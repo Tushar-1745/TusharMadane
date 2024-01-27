@@ -50,7 +50,7 @@ function Intro() {
       <div style={introContentStyle}>
         <h3 style={{ fontSize: '30px' }}>Hello there, I'm</h3>
         <h3 style={{ fontSize: '50px', marginTop: '-25px' }}>Tushar Madane</h3>
-        <h2 style={{ fontSize: '30px', marginTop: '-20px' }}>Full-Stack Developer</h2>
+        <h2 style={{ fontSize: '30px', marginTop: '-20px' }}>Software Engineer</h2>
         <ul style={listStyle}>
           <li style={listItemStyle}>Core Java</li>
           <li style={listItemStyle}>Data Structure and Algorithm</li>

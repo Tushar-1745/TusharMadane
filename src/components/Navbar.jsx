@@ -6,40 +6,26 @@ import { GrGithub } from 'react-icons/gr';
 import { useState } from 'react';
 
 const navbarStyle = {
-  border: 'black 5px solid',
-  margin: '20px 20px auto 20px',
-  height: '80px',
-  borderRadius: '20px',
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',  // Updated to space-between
-  alignItems: 'center',  // Center items vertically
-  fontSize: '20px'
+  // border: 'black 5px solid',
+  margin: '20px 20px auto 20px', height: '80px', borderRadius: '20px', display: 'flex',
+  flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', fontSize: '20px'
 }
 const homeImageStyle = {
-  width: '50px',  // Adjust the width as needed
-  height: '50px', // Adjust the height as needed
-  margin: 'auto 25px'
+  width: '50px', height: '50px', margin: 'auto 25px'
 };
 const linkContainerStyle = {
-  display: 'flex',
-  flexDirection: 'row',
+  display: 'flex', flexDirection: 'row',
 }
-
 const boxStyle = {
-  margin: 'auto 20px',
-  textDecoration: 'none',  // Remove underline
+  margin: 'auto 20px', textDecoration: 'none',  // Remove underline
 }
-
 const logoStyle = {
   margin: '0 20px', color: 'black'
 }
-
 const buttonStyle = {
-  fontSize: '21px', border: 'none', outline: 'none', color: 'black', padding: '10px 16px',
+  fontSize: '21px', border: 'none', outline: 'none', color: 'black', padding: '13px 16px',
   backgroundColor: 'inherit', fontFamily: 'inherit', margin: 0, cursor: 'pointer',
 }
-
 const divStyle = {
   position: 'relative', display: 'inline-block'
 }
@@ -47,15 +33,15 @@ const LinkStyle = {
   color: 'white', padding: '6px 16px', textDecoration: 'none', display: 'block', textAlign: 'left',
 }
 const dropdownStyle = {
-  // position: 'absolute', backgroundColor: '#f9f9f9', minWidth: '50px',
   position: 'absolute', backgroundColor: '#0A1434', minWidth: '50px',
   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)', zIndex: 1,
 }
-
-function Navbar() {
-  const linkedinLink = 'https://www.linkedin.com/in/tushar-madane-29071b252/'
+const linkedinLink = 'https://www.linkedin.com/in/tushar-madane-29071b252/'
   const leetcodeLink = 'https://leetcode.com/Tushar1745/'
   const githubLink = 'https://github.com/Tushar-1745'
+
+
+function Navbar() {
 
   const [isExperienceDropdownOpen, setIsExperienceDropdownOpen] = useState(false);
 
@@ -63,12 +49,14 @@ function Navbar() {
     <>
       <div style={navbarStyle}>
         <div style={linkContainerStyle}>
+          <Link to="/">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgwo34i6dF8u55chEwhiibz6jMGUS1UbdRsc_hTBHLEQvEJM5qCY7qeYD4WroO9cHzB5w&usqp=CAU"
             alt="Home"
             style={homeImageStyle}
           />
-          <Link to="/" style={boxStyle}>Home</Link>
+          </Link>
+          {/* <Link to="/" style={boxStyle}>Home</Link> */}
           <Link to="/education" style={boxStyle}>Education</Link>
           <Link to="/certifications" style={boxStyle}>Certifications</Link>
 
@@ -103,3 +91,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+

@@ -4,33 +4,19 @@ import webDevelopmentImage from '../pictures/webdevelopment.jpeg';
 
 const Certifications = () => {
   const certificationsContainerStyle = {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    marginBottom: '40px',  // Adjust margin as needed
+    display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around',
+    marginBottom: '40px',
   };
-
+  
   const certificationStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    padding: '20px',
-    margin: '20px',
-    borderRadius: '10px',
-    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
-    backgroundColor: '#283747',  // Change background color
-    color: '#F8F9FA',  // Change text color
-    textAlign: 'center',
-    width: '400px',  // Adjust width as needed
-    transition: 'transform 0.3s ease-in-out',  // Hover effect transition
+    display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',
+    padding: '20px', margin: '20px', borderRadius: '10px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+    backgroundColor: '#283747', color: '#F8F9FA', textAlign: 'center', width: '400px',  
+    transition: 'transform 0.3s ease-in-out',
   };
 
   const certificationImageStyle = {
-    width: '100%',
-    height: '200px',
-    borderRadius: '10px',
+    width: '100%', height: 'auto', borderRadius: '10px',
   };
 
   // Hover effect functions
