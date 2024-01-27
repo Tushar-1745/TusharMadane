@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import tmpic from '../pictures/tmpic.jpg';
 

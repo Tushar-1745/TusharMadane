@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 export default function Footer() {
   const instagramLink = 'https://www.instagram.com/your-instagram-username';
   const facebookLink = 'https://www.facebook.com/your-facebook-username'; 
-  const twitterLink = 'https://twitter.com/your-twitter-username'; 
+  const twitterLink = 'https://twitter.com/madane_tushar'; 
 
   return (
     <div style={{ marginTop: '20px',backgroundColor: '#333', color: 'white', padding: '20px 0', textAlign: 'center' }}>
