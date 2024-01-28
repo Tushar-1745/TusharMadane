@@ -6,7 +6,8 @@ import { GrGithub } from 'react-icons/gr';
 import { useState } from 'react';
 
 const navbarStyle = {
-  // border: 'black 5px solid',
+  // border: 'black 5px solid', 
+  // position: 'sticky', top: '5', zIndex: '1000', 
   margin: '20px 20px auto 20px', height: '80px', borderRadius: '20px', display: 'flex',
   flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', fontSize: '20px'
 }

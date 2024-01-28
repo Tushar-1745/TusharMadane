@@ -54,7 +54,7 @@ const AppContent = () => {
 
   return (
     <div>
-      <Navbar style={{ position: 'fixed' }} currentRoute={location.pathname} />
+      <Navbar currentRoute={location.pathname} />
       {route}
       <Footer />
     </div>
