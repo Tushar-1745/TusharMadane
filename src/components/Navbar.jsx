@@ -5,6 +5,8 @@ import { GrGithub } from 'react-icons/gr';
 
 import { useState } from 'react';
 
+const imgUrl= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlo2Mcne5gfIgamsBMyHUboDtaQoQsGGC-LA&usqp=CAU';
+
 const navbarStyle = {
   // border: 'black 5px solid', 
   // position: 'sticky', top: '5', zIndex: '1000', 
@@ -43,7 +45,6 @@ const linkedinLink = 'https://www.linkedin.com/in/tushar-madane-29071b252/'
 
 
 function Navbar() {
-
   const [isExperienceDropdownOpen, setIsExperienceDropdownOpen] = useState(false);
 
   return (
@@ -76,6 +77,7 @@ function Navbar() {
 
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
+          <div ><img style={{height: '30px', marginRight: '20px'}} src={imgUrl} alt="" /></div>
           <a href={linkedinLink} target="_blank" rel="noopener noreferrer" style={logoStyle}>
             <IoLogoLinkedin size={30} />
           </a>
