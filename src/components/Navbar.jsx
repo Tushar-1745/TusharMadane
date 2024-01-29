@@ -46,6 +46,7 @@ const linkedinLink = 'https://www.linkedin.com/in/tushar-madane-29071b252/'
 
 function Navbar() {
   const [isExperienceDropdownOpen, setIsExperienceDropdownOpen] = useState(false);
+  const [myPage, setmyPage] = useState(false);
 
   return (
     <>
@@ -77,7 +78,17 @@ function Navbar() {
 
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
-          <div ><img style={{height: '30px', marginRight: '20px'}} src={imgUrl} alt="" /></div>
+          <div style={divStyle}
+            onMouseEnter={() => setmyPage(true)}
+            onMouseLeave={() => setmyPage(false)}>
+              <img style={{...buttonStyle, height: '30px', marginRight: '20px'}}src={imgUrl} alt="" />
+              {myPage && (
+              <div style={dropdownStyle} >
+                <Link to="mypage/documents" style={LinkStyle}>Documents</Link>
+                <Link to="mypage/photos" style={LinkStyle}>Photos</Link>
+              </div>
+            )}
+          </div>
           <a href={linkedinLink} target="_blank" rel="noopener noreferrer" style={logoStyle}>
             <IoLogoLinkedin size={30} />
           </a>
