@@ -77,11 +77,11 @@ function Navbar() {
           </div>
 
         </div>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
+        <div style={{ marginTop: '5px 10px', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
           <div style={divStyle}
             onMouseEnter={() => setmyPage(true)}
             onMouseLeave={() => setmyPage(false)}>
-              <img style={{...buttonStyle, height: '30px', marginRight: '20px'}}src={imgUrl} alt="" />
+              <img style={{...buttonStyle, height: '55px', }}src={imgUrl} alt="" />
               {myPage && (
               <div style={dropdownStyle} >
                 <Link to="mypage/documents" style={LinkStyle}>Documents</Link>

@@ -10,7 +10,7 @@ const Certifications = () => {
   
   const certificationStyle = {
     display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',
-    padding: '20px', margin: '20px', borderRadius: '10px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+    padding: '20px', margin: '80px 20px', borderRadius: '10px', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
     backgroundColor: '#283747', color: '#F8F9FA', textAlign: 'center', width: '400px',  
     transition: 'transform 0.3s ease-in-out',
   };

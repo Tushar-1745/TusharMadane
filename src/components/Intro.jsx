@@ -26,7 +26,7 @@ const tmPicStyle = {
 
 const listStyle = {
   marginLeft: '70px',
-  marginTop: '-20px',
+  marginTop: '-5px',
   fontSize: '22px',
   padding: 0,
   textAlign: 'left', // Align list items to the left
@@ -47,8 +47,8 @@ function Intro() {
     <div style={introContainerStyle}>
       <div style={introContentStyle}>
         <h3 style={{ fontSize: '30px' }}>Hello there, I'm</h3>
-        <h3 style={{ fontSize: '50px', marginTop: '-25px' }}>Tushar Madane</h3>
-        <h2 style={{ fontSize: '30px', marginTop: '-20px' }}>Software Engineer</h2>
+        <h3 style={{ fontSize: '50px', marginTop: '-6px' }}>Tushar Madane</h3>
+        <h2 style={{ fontSize: '30px', marginTop: '20px' }}>Software Engineer</h2>
         <ul style={listStyle}>
           <li style={listItemStyle}>Core Java</li>
           <li style={listItemStyle}>Data Structure and Algorithm</li>

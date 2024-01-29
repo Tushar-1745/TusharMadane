@@ -32,7 +32,7 @@ const Education = () => {
     <div style={{ height: '80vh' }}>
       <h1 style={{ fontSize: '60px', fontStyle: 'italic', textAlign: 'center' }}>Education</h1>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-evenly' }}>
+      <div style={{ marginTop:'70px', display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-evenly' }}>
         <div
           style={{ ...EduBox, width: '350px' }}
           onMouseEnter={handleHover}

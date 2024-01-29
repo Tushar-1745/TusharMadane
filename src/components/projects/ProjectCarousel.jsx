@@ -33,7 +33,7 @@ const ProjectCarousel = () => {
   return (
     <div style={{height: '90vh'}}>
       <h1 style={{ fontSize: '60px', fontStyle: 'italic', textAlign: 'center' }}>Projects</h1>
-      <div style={{ position: 'relative', paddingLeft: '90px' }}>
+      <div style={{ position: 'relative', paddingLeft: '90px', marginTop:'60px' }}>
         <AliceCarousel
           items={items}
           responsive={responsive}
