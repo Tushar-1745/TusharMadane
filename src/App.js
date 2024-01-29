@@ -40,6 +40,8 @@ import Education from './pages/Education';
 import Certifications from './components/Certifications';
 import Job from './components/Job';
 import Internship from './components/Internship';
+import Documents from './components/Documents'
+import Photos from './components/Photos'
 
 const AppContent = () => {
   const location = useLocation();
@@ -50,6 +52,8 @@ const AppContent = () => {
     { path: '/experience/internship', element: <Internship /> },
     { path: '/experience/projects', element: <ProjectCarousel /> },
     { path: '/experience/Job', element: <Job /> },
+    { path: '/mypage/documents', element: <Documents /> },
+    { path: '/mypage/photos', element: <Photos /> },
   ]);
 
   return (
