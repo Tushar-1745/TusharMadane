@@ -43,6 +43,9 @@ const linkedinLink = 'https://www.linkedin.com/in/tushar-madane-29071b252/'
   const leetcodeLink = 'https://leetcode.com/Tushar1745/'
   const githubLink = 'https://github.com/Tushar-1745'
 
+  const handleProfile=()=>{
+    alert("this is only for profile developer. If you have login Credential you can move in");
+  }
 
 function Navbar() {
   const [isExperienceDropdownOpen, setIsExperienceDropdownOpen] = useState(false);
@@ -78,7 +81,7 @@ function Navbar() {
 
         </div>
         <div style={{ marginTop: '5px 10px', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
-          <div style={divStyle}
+          {/* <div style={divStyle}
             onMouseEnter={() => setmyPage(true)}
             onMouseLeave={() => setmyPage(false)}>
               <img style={{...buttonStyle, height: '55px', }}src={imgUrl} alt="" />
@@ -88,7 +91,8 @@ function Navbar() {
                 <Link to="mypage/photos" style={LinkStyle}>Photos</Link>
               </div>
             )}
-          </div>
+          </div> */}
+          <div><img style={{height: '30px', marginRight: '30px'}} onClick={handleProfile} src={imgUrl} alt="" /></div>
           <a href={linkedinLink} target="_blank" rel="noopener noreferrer" style={logoStyle}>
             <IoLogoLinkedin size={30} />
           </a>
