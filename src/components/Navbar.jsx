@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoLogoLinkedin, IoLogoOctocat } from 'react-icons/io5';
 import { GrGithub } from 'react-icons/gr';
-
+import Login from './Login';
 import { useState } from 'react';
 
 const imgUrl= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlo2Mcne5gfIgamsBMyHUboDtaQoQsGGC-LA&usqp=CAU';
@@ -43,9 +43,10 @@ const linkedinLink = 'https://www.linkedin.com/in/tushar-madane-29071b252/'
   const leetcodeLink = 'https://leetcode.com/Tushar1745/'
   const githubLink = 'https://github.com/Tushar-1745'
 
-  const handleProfile=()=>{
-    alert("this is only for profile developer. If you have login Credential you can move in");
+  const handleProfile = () => {
+    alert("this is personal private section of Developer.")
   }
+
 
 function Navbar() {
   const [isExperienceDropdownOpen, setIsExperienceDropdownOpen] = useState(false);
@@ -92,7 +93,8 @@ function Navbar() {
               </div>
             )}
           </div> */}
-          <div><img style={{height: '30px', marginRight: '30px'}} onClick={handleProfile} src={imgUrl} alt="" /></div>
+         <Link to="/login" style={boxStyle}><img style={{height: '30px', marginRight: '10px'}} onClick={handleProfile} src={imgUrl} alt="" /></Link>
+          <a href=""> </a>
           <a href={linkedinLink} target="_blank" rel="noopener noreferrer" style={logoStyle}>
             <IoLogoLinkedin size={30} />
           </a>

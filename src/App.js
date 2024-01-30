@@ -25,6 +25,7 @@ const AppContent = () => {
     { path: '/experience/Job', element: <Job /> },
     { path: '/mypage/documents', element: <Login /> },
     { path: '/mypage/photos', element: <Login /> },
+    {path: '/login', element:<Login/>}
   ]);
 
   return (
