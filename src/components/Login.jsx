@@ -33,7 +33,7 @@ function Login() {
   const handleLogin = () => {
     // Perform authentication logic here
     // For simplicity, let's assume email 'test@example.com' and password 'password' are correct
-    if (email === 'madanetushar2@gmail.com' && password === 'Tushar@1745') {
+    if (email === 'madanetushar2@gmail.com' && password === '123') {
       // Redirect to Home component
       navigate('/home');
     } else {

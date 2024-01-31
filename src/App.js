@@ -67,6 +67,7 @@ import Job from './components/Job';
 import Internship from './components/Internship';
 import Home from './components/personalsection/Home';
 import Login from './components/Login';
+import Documents from './components/personalsection/Documents';
 
 const AppContent = () => {
   const location = useLocation();
@@ -83,7 +84,8 @@ const AppContent = () => {
     { path: '/mypage/documents', element: <Login /> },
     { path: '/mypage/photos', element: <Login /> },
     { path: '/login', element: <Login /> },
-    { path: '/home', element: <Home /> }
+    { path: '/home', element: <Home /> },
+    { path: '/personal/documents', element: <Documents/>}
   ]);
 
   return (

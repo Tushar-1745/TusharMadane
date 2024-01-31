@@ -1,44 +1,18 @@
 // Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const PersonalNavbar = () => {
   return (
-    <nav style={navbarStyle}>
-      <div style={logoStyle}>Your Logo</div>
-      <ul style={navLinksStyle}>
-        <li style={navLinkStyle}><a href="#">Home</a></li>
-        <li style={navLinkStyle}><a href="#">About</a></li>
-        <li style={navLinkStyle}><a href="#">Services</a></li>
-        <li style={navLinkStyle}><a href="#">Contact</a></li>
-      </ul>
+    <nav style={{ margin: '40px 60px', border:'4px solid black', height:'80px', width: '1400px', borderRadius: '5px'}}>
+      <div><img src="" alt="" /></div>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginRight:'80px' }}>
+        <div><Link to="/personal/documents" style={{ marginRight: '40px' }}>Documents</Link></div>
+        <div><Link to="/photos">Photos</Link></div> 
+      </div>
     </nav>
   );
 }
 
-const navbarStyle = {
-  backgroundColor: '#3498db',
-  padding: '15px',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  color: '#fff',
-};
+export default PersonalNavbar;
 
-const logoStyle = {
-  fontSize: '1.5em',
-  fontWeight: 'bold',
-};
-
-const navLinksStyle = {
-  listStyle: 'none',
-  display: 'flex',
-};
-
-const navLinkStyle = {
-  marginRight: '20px',
-  textDecoration: 'none',
-  color: '#fff',
-  transition: 'color 0.3s ease-in-out',
-};
-
-export default Navbar;
